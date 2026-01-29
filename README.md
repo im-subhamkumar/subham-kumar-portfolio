@@ -39,13 +39,7 @@ To get a local copy up and running, follow these simple steps:
    npm install
    ```
 
-3. **Set up Environment Variables**
-   Create a `.env.local` file in the root directory and add your API keys:
-   ```env
-   GEMINI_API_KEY=your_api_key_here
-   ```
-
-4. **Running the Development Server**
+3. **Running the Development Server**
    ```sh
    npm run dev
    ```
