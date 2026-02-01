@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.05, y: -4 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://drive.google.com/file/d/1CZuASGh4igu_EEU8ISU0Sr30WPoPO1q7/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1Vh5qPZ1Yf5j9l6o533PDHwWV-rOT04l4/view?usp=sharing"
                 className="glow-on-hover bg-emerald-600 hover:bg-emerald-700 text-white font-black uppercase tracking-wider text-[10px] sm:text-xs rounded-2xl shadow-xl transition-all flex items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"

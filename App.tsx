@@ -36,7 +36,7 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const resumeUrl = "https://drive.google.com/file/d/1CZuASGh4igu_EEU8ISU0Sr30WPoPO1q7/view?usp=drive_link";
+  const resumeUrl = "https://drive.google.com/file/d/1Vh5qPZ1Yf5j9l6o533PDHwWV-rOT04l4/view?usp=sharing";
 
   return (
     <div className={`min-h-screen transition-colors duration-700 selection:bg-amber-500 selection:text-white overflow-x-hidden ${isDarkMode ? 'bg-[#080807] text-slate-100' : 'bg-slate-50 text-slate-800'}`}>
