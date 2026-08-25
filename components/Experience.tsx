@@ -4,13 +4,27 @@ import { motion } from 'framer-motion';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      role: "Prompt Engineer (Freelance)",
-      company: "Outlier | Remote",
-      period: "Oct 2024 – June 2025",
+      role: "Full Stack Intern",
+      company: "Design Esthetics",
+      location: "Bengaluru, India",
+      period: "Feb 2026 – May 2026",
       points: [
-        "Collaborated with cross-functional teams to refine and optimize AI prompts, improving reliability and quality.",
-        "Analyzed and evaluated AI-generated coding outputs, identifying gaps and providing feedback.",
-        "Debugged and resolved coding issues produced by LLMs, ensuring functional accuracy."
+        "Developed full-stack modules using React, improving internal process efficiency by 20%.",
+        "Developed RESTful APIs integrated with relational databases and resolved 40+ issues to achieve 99.9% system uptime.",
+        "Automated deployment process with Git and CI/CD pipelines, reducing staging time by 30% through sprint cycles.",
+        "Managed and prioritized tasks using Agile/Scrum methodology, enabling structured team review sessions."
+      ]
+    },
+    {
+      role: "AI Logic & Process Evaluator (Freelance)",
+      company: "Outlier AI",
+      location: "Remote",
+      period: "Oct 2024 – Jun 2025",
+      points: [
+        "Performed rigorous evaluation of logic behind 500+ AI-generated scripts using automation, maintaining high accuracy and compliance levels.",
+        "Applied systematic approach to decrease logic error rate by 15% and discover process automation use cases for LLMs.",
+        "Collaborated with cross-functional teams to refine and optimize AI prompts, improving reliability and output quality.",
+        "Debugged and resolved coding issues produced by LLMs, ensuring functional accuracy across diverse evaluation tasks."
       ]
     }
   ];
@@ -38,6 +52,7 @@ const Experience: React.FC = () => {
                   <div>
                     <h3 className="text-xl sm:text-2xl font-extrabold text-slate-800 dark:text-white mb-1 sm:mb-2 leading-tight">{exp.role}</h3>
                     <p className="text-amber-700 dark:text-amber-400 font-bold text-base sm:text-lg">{exp.company}</p>
+                    <p className="text-slate-500 dark:text-slate-500 font-semibold text-sm">{exp.location}</p>
                   </div>
                   <span className="text-[9px] sm:text-[11px] font-black uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400 bg-amber-500/10 px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-full border border-amber-500/20 shrink-0 self-start">
                     {exp.period}

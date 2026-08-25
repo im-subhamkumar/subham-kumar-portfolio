@@ -6,19 +6,19 @@ const Skills: React.FC = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "HTML/CSS", "SQL"]
+      skills: ["Python", "JavaScript (ES6+)", "SQL", "HTML5", "CSS3"]
     },
     {
-      title: "Frameworks & Tools",
-      skills: ["React.js", "Express.js", "Node.js", "MySQL", "MongoDB", "Pandas", "Git", "Docker", "Postman"]
+      title: "Full-Stack & Automation",
+      skills: ["React.js", "Node.js", "Express.js", "FastAPI", "REST APIs", "Microservices"]
     },
     {
-      title: "Technical Expertise",
-      skills: ["DSA", "OOPS", "DBMS", "Google Cloud Platform", "Prompt Engineering"]
+      title: "Cloud, DevOps & Databases",
+      skills: ["AWS", "Google Cloud Platform", "Docker", "Git", "CI/CD", "MongoDB", "MySQL"]
     },
     {
-      title: "Soft Skills",
-      skills: ["Problem-solving", "Clear Communication", "Collaborative Team Player"]
+      title: "Methodologies & Tools",
+      skills: ["Agile / Scrum", "Postman", "JIRA", "Unit Testing", "Google Workspace", "Prompt Engineering"]
     }
   ];
 

@@ -9,19 +9,19 @@ const Certifications: React.FC = () => {
       link: "https://certificates.simplicdn.net/share/9735896_9339406_1768852657844.pdf"
     },
     { 
-      title: "Google Analytics Certification", 
-      issuer: "Google",
-      link: "https://skillshop.credential.net/7be30301-3f6d-4d9e-80fd-f3e183b2ec59"
-    },
-    { 
       title: "Oracle Data Platform Foundations Associate", 
       issuer: "Oracle",
       link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=FE98A87CAB46CFE44E86003EE4969A097004EC3F2F3C73679E582A686ED76C21"
     },
     { 
-      title: "Exploring Data Transformation", 
-      issuer: "Google Cloud",
-      link: "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI0MTk0IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvODk1MzU4MV85MzM5NDA2MTc1NzUzOTIxNTg4NS5wbmciLCJ1c2VybmFtZSI6IlN1YmhhbSBLdW1hciJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F7128%2FExploring-Data-Transformation-with-Google-Cloud%2Fcertificate%2Fdownload-skillup&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVrwzMLa8K9HevDE%2ByrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAL6ZyeVBAAAA&%24web_only=true&_branch_match_id=1495748027500878294"
+      title: "Google Analytics Certification", 
+      issuer: "Google",
+      link: "https://skillshop.credential.net/7be30301-3f6d-4d9e-80fd-f3e183b2ec59"
+    },
+    { 
+      title: "Google Ads Search Certification", 
+      issuer: "Google",
+      link: "https://skillshop.credential.net/d4c61bad-6bd7-4e6f-8d72-1081c38cd7e9"
     }
   ];
 

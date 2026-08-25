@@ -5,25 +5,52 @@ import { motion } from 'framer-motion';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "MERN E-commerce Platform",
+      title: "HealthPodcastIQ",
+      type: "Automated AI Microservices & NLP Pipeline",
+      description: "Designed an automated pipeline to transcribe and summarize 50+ hours of unstructured audio/video health podcast content. Utilized OpenAI Whisper API for transcription and fine-tuned LLMs for context extraction and fact-checking.",
+      tech: ["Python", "FastAPI", "Docker", "OpenAI Whisper", "Cloud APIs"],
+      link: "https://github.com/im-subhamkumar/HealthPodcastIQ",
+      highlights: [
+        "50+ hrs of media processed",
+        "< 500 ms API latency",
+        "40% faster cloud bootup"
+      ]
+    },
+    {
+      title: "Dynamic Collage Maker",
+      type: "Interactive High-Performance Web Engine",
+      description: "A modular image manipulation web tool handling 50+ concurrent image operations with 60 FPS real-time UI redrawing. Built with zero external runtime dependencies using custom layout algorithms and bounding box collision detection.",
+      tech: ["JavaScript", "HTML5 Canvas", "CSS3"],
+      link: "https://dynamic-collage-maker-subham.netlify.app/",
+      highlights: [
+        "60 FPS real-time render",
+        "30% CPU usage reduction",
+        "PNG/JPEG export pipeline"
+      ]
+    },
+    {
+      title: "MERN E-Commerce Platform",
       type: "Full Stack Application",
-      description: "Robust e-commerce solution with admin panel, CRUD for product management, PayPal integration, and secure MongoDB storage.",
+      description: "Robust e-commerce solution with admin panel, full CRUD for product management, PayPal integration, and secure MongoDB storage. Built RESTful APIs with Node.js/Express and a React frontend.",
       tech: ["MongoDB", "Express", "React", "Node.js", "Postman"],
-      link: "https://github.com/im-subhamkumar/E-Commerce-Platform#"
+      link: "https://github.com/im-subhamkumar/E-Commerce-Platform#",
+      highlights: [
+        "Admin dashboard",
+        "PayPal integration",
+        "REST API backend"
+      ]
     },
     {
       title: "Student Performance Prediction",
-      type: "Machine Learning Model",
-      description: "A comprehensive data analytics project predicting academic performance through clustering sleep patterns. Features a Streamlit dashboard with Flask API.",
-      tech: ["Python", "KMeans", "GMM", "Streamlit", "Pandas"],
-      link: "https://github.com/im-subhamkumar/Sleep_Pattern_Prediction_AI-ML"
-    },
-    {
-      title: "HealthPodcastIQ",
-      type: "AI & NLP Research",
-      description: "A research-based AI application that transcribes, summarizes, fact-checks, and sequences health podcast videos. Designed to enhance accessibility and information retrieval from long-form audio-visual content.",
-      tech: ["NLP", "AI/ML", "Whisper", "Bard Model (Fine-tuned)", "Python"],
-      link: "https://github.com/im-subhamkumar"
+      type: "Machine Learning & Data Analytics",
+      description: "A comprehensive data analytics project predicting academic performance through clustering sleep patterns. Features a Streamlit dashboard with Flask API for real-time prediction visualization.",
+      tech: ["Python", "KMeans", "GMM", "Streamlit", "Pandas", "Flask"],
+      link: "https://github.com/im-subhamkumar/Sleep_Pattern_Prediction_AI-ML",
+      highlights: [
+        "KMeans + GMM clustering",
+        "Streamlit dashboard",
+        "Flask REST API"
+      ]
     }
   ];
 
@@ -35,7 +62,7 @@ const Projects: React.FC = () => {
           Featured Projects
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
@@ -48,9 +75,19 @@ const Projects: React.FC = () => {
               <div className="p-8 flex flex-col h-full">
                 <span className="text-[10px] uppercase font-black tracking-[0.3em] text-emerald-600 dark:text-emerald-400 mb-4 block">{project.type}</span>
                 <h3 className="text-2xl font-extrabold mb-4 text-slate-800 dark:text-white leading-tight">{project.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed font-semibold">
+                <p className="text-slate-600 dark:text-slate-400 text-sm mb-5 leading-relaxed font-semibold">
                   {project.description}
                 </p>
+
+                {/* Highlight chips */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {project.highlights.map((h) => (
+                    <span key={h} className="text-[10px] font-bold px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400">
+                      ✦ {h}
+                    </span>
+                  ))}
+                </div>
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tech.map((t) => (
                     <span key={t} className="text-[10px] font-bold px-3 py-1 rounded-lg bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:border-emerald-500 transition-colors">
